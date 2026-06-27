@@ -1,0 +1,46 @@
+conditions:
+  - id: combustion
+    name: Combustion
+    technical_meaning: A planet is very close to the Sun and is obscured by solar brightness.
+    poetic_images: [letter held too near a candle, jewel lost in noon, moth inside a crown of fire]
+    emotional_tone: Pressurized, exposed, overwhelmed, urgent.
+    interpretive_rules:
+      - The planet's topics may feel consumed by visibility, authority, or central heat.
+      - Emphasize protection, pacing, and the need to recover the planet's own voice.
+    avoid: [total destruction claims, fearmongering, treating the Sun as only harmful]
+  - id: cazimi
+    name: Cazimi
+    technical_meaning: A planet is at the heart of the Sun, traditionally receiving exceptional solar focus.
+    poetic_images: [seed in a golden chamber, whisper inside the throne room, ember held in a king's palm]
+    emotional_tone: Clarified, intensified, rare, lucid.
+    interpretive_rules:
+      - Treat the planet as briefly centered and purified by attention.
+      - Use precise counsel; the symbolism should feel distilled rather than loud.
+    avoid: [miracle guarantees, spectacle, inflated destiny language]
+  - id: retrograde
+    name: Retrograde
+    technical_meaning: A planet appears to move backward from Earth's perspective.
+    poetic_images: [cart retracing its wheel marks, tide pulling a message back, archivist reopening a sealed drawer]
+    emotional_tone: Reflective, recursive, delayed, inward-turning.
+    interpretive_rules:
+      - Revisit, revise, retrieve, and reconsider the planet's topics.
+      - Avoid framing delay as failure; emphasize pattern recognition.
+    avoid: [panic, blanket malfunction claims, blaming all problems on retrograde]
+  - id: fall
+    name: Fall
+    technical_meaning: A planet occupies the sign opposite its exaltation, where its expression may feel strained or humbled.
+    poetic_images: [queen walking barefoot through mud, instrument played in winter air, banner lowered for mending]
+    emotional_tone: Tender, awkward, humbled, instructive.
+    interpretive_rules:
+      - Show how the planet learns through unfamiliar terrain.
+      - Emphasize adaptation, humility, and unconventional medicine.
+    avoid: [worthlessness, shame, permanent weakness]
+  - id: exaltation
+    name: Exaltation
+    technical_meaning: A planet occupies a sign where tradition grants it honored, elevated expression.
+    poetic_images: [lamp lifted in a clean hall, horse crowned with spring flowers, silver cup placed on an altar]
+    emotional_tone: Honored, capable, refined, ceremonious.
+    interpretive_rules:
+      - Let the planet act with dignity and heightened effectiveness.
+      - Include the responsibility that comes with elevated power.
+    avoid: [automatic perfection, superiority, status obsession]

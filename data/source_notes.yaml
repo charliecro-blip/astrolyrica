@@ -1,0 +1,4 @@
+source_notes:
+  purpose: Track sources consulted while keeping the symbolic database original and transformatively written.
+  rules_reference: docs/source_rules.md
+  entries: []

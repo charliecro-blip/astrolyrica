@@ -1,0 +1,36 @@
+forms:
+  - id: five_line_oracle
+    name: Five-Line Oracle
+    structure:
+      lines: 5
+      constraints:
+        - Line 1 names the core symbol or tension.
+        - Line 2 gives an image.
+        - Line 3 introduces a turn or warning.
+        - Line 4 offers a practical medicine.
+        - Line 5 closes with a memorable imperative or blessing.
+  - id: x_length_poem
+    name: X-Length Poem
+    constraints:
+      - User specifies approximate line count, stanza count, or word count.
+      - Maintain a coherent symbolic arc from condition to image to action.
+      - Avoid banned phrases and copied source language.
+  - id: daily_horoscope
+    name: Daily Horoscope
+    structure:
+      paragraphs: 1
+      constraints:
+        - 80 to 140 words unless otherwise requested.
+        - Include one emotional theme, one practical action, and one gentle caution.
+  - id: prose_poem
+    name: Prose Poem
+    constraints:
+      - One compact paragraph with heightened imagery and clear interpretive logic.
+      - No line breaks unless requested.
+      - Prefer concrete nouns and active verbs.
+  - id: image_prompt
+    name: Image Prompt
+    constraints:
+      - Describe subject, setting, atmosphere, palette, symbolic objects, and composition.
+      - Avoid instructions that require text rendering in the image.
+      - Keep astrology symbolic rather than diagrammatic unless requested.

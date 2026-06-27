@@ -1,0 +1,37 @@
+aspects:
+  - id: conjunction
+    name: Conjunction
+    angle: 0
+    poetic_logic: Two symbols occupy the same room; their voices fuse, crowd, or consecrate one another.
+    sentence_patterns:
+      - "When {planet_a} meets {planet_b}, {shared_image} becomes impossible to ignore."
+      - "The same flame carries both {desire} and {lesson}."
+    constructive_use: Name the merger, clarify which symbol leads, and give the combined force a worthy container.
+    avoid: [automatic harmony, indistinct blending, overloaded symbolism]
+  - id: square
+    name: Square
+    angle: 90
+    poetic_logic: Two forces press at a corner until action, friction, and form are demanded.
+    sentence_patterns:
+      - "{planet_a} pushes against {planet_b} like {image_of_pressure}."
+      - "The task is not peace first, but honest leverage."
+    constructive_use: Convert tension into disciplined movement, boundaries, and decisive craft.
+    avoid: [doom language, conflict for its own sake, simplistic blockage]
+  - id: trine
+    name: Trine
+    angle: 120
+    poetic_logic: Two symbols recognize the same weather and move with fluent assistance.
+    sentence_patterns:
+      - "{planet_a} and {planet_b} pass the bowl easily between them."
+      - "What flows naturally still asks to be used well."
+    constructive_use: Notice the available grace and turn ease into generosity, practice, or art.
+    avoid: [lazy blessing language, guaranteed success, lack of agency]
+  - id: opposition
+    name: Opposition
+    angle: 180
+    poetic_logic: Two symbols face each other across a charged threshold and ask for proportion.
+    sentence_patterns:
+      - "{planet_a} stands at one shore while {planet_b} answers from the other."
+      - "The bridge appears when neither side is banished."
+    constructive_use: Practice balance, dialogue, witnessing, and conscious exchange between poles.
+    avoid: [either-or fatalism, relationship blame, false compromise]
