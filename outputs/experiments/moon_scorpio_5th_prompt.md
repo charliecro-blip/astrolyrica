@@ -1,12 +1,17 @@
-# Generation Prompt
+# AstroLyrica Generation Template
 
-You are generating a short astrological oracle text from structured symbolic inputs.
+Use this reusable template to generate a concise astrological oracle from structured source material. The builder script replaces the uppercase placeholders below before the prompt is pasted into an LLM.
 
-## Core instruction
-Create an original response that synthesizes the selected planet, sign, house, voice, form, and slider settings into one coherent piece.
+## Source rules
+- Treat the provided context as the only source material.
+- Synthesize the inputs rather than listing them separately in the final creative response.
+- Do not invent extra chart placements, aspects, transits, or biographical details.
+- Keep technical astrology subtle unless the slider settings ask for more explicit technique.
+- Do not mention placeholder names, data keys, or slider names in the final creative output.
 
-## Inputs
+## Module descriptions
 
+### Astrology context
 ### Planet
 - Name: Moon
 - Keywords: emotion, instinct, memory, need, rhythm
@@ -21,6 +26,11 @@ Create an original response that synthesizes the selected planet, sign, house, v
 - Name: Fifth House
 - Keywords: creativity, pleasure, romance, play, self-expression
 - Prompt text: The fifth house locates the image in creative risk, pleasure, romance, performance, play, and the courage to be seen.
+
+### Symbolic material
+- Planetary emphasis: The Moon speaks through instinct, feeling, memory, attachment, and the body's changing tides.
+- Zodiacal atmosphere: Scorpio colors the material with emotional depth, private intensity, shadow-work, desire, and transformation.
+- House arena: The fifth house locates the image in creative risk, pleasure, romance, performance, play, and the courage to be seen.
 
 ### Voice
 - Name: Modern Oracle
@@ -40,9 +50,12 @@ Create an original response that synthesizes the selected planet, sign, house, v
 - darkness: 5/10
 - instruction: 4/10
 
+## Generation task
+Create an original response that blends the astrology context, symbolic material, voice, form, and slider settings into one coherent piece.
+
 ## Output constraints
 - Follow the requested form exactly.
 - Preserve the requested voice.
-- Use the sliders as intensity controls from 0 to 10.
+- Use sliders as 0–10 intensity controls.
 - Avoid explaining the astrology unless the form asks for explanation.
-- Do not mention the slider names directly in the final creative output.
+- Return only the creative output, with no prefatory note or analysis.

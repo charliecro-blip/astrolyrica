@@ -82,13 +82,28 @@ def build_prompt(input_path=DEFAULT_INPUT):
     if missing:
         raise PromptBuildError(f"Missing required experiment fields: {', '.join(missing)}")
 
+    planet = load_entry("planets", experiment["planet"])
+    sign = load_entry("signs", experiment["sign"])
+    house = load_entry("houses", experiment["house"])
+
     replacements = {
-        "{{planet}}": format_entry(load_entry("planets", experiment["planet"])),
-        "{{sign}}": format_entry(load_entry("signs", experiment["sign"])),
-        "{{house}}": format_entry(load_entry("houses", experiment["house"])),
-        "{{voice}}": format_entry(load_entry("voices", experiment["voice"])),
-        "{{form}}": format_entry(load_entry("forms", experiment["form"])),
-        "{{sliders}}": format_sliders(experiment["sliders"]),
+        "ASTROLOGY_CONTEXT": "\n\n".join(
+            [
+                "### Planet\n" + format_entry(planet),
+                "### Sign\n" + format_entry(sign),
+                "### House\n" + format_entry(house),
+            ]
+        ),
+        "SYMBOLIC_MATERIAL": "\n".join(
+            [
+                f"- Planetary emphasis: {planet.get('prompt_text', planet['key'])}",
+                f"- Zodiacal atmosphere: {sign.get('prompt_text', sign['key'])}",
+                f"- House arena: {house.get('prompt_text', house['key'])}",
+            ]
+        ),
+        "VOICE": format_entry(load_entry("voices", experiment["voice"])),
+        "FORM": format_entry(load_entry("forms", experiment["form"])),
+        "SLIDERS": format_sliders(experiment["sliders"]),
     }
 
     prompt = TEMPLATE_PATH.read_text(encoding="utf-8")
