@@ -155,6 +155,45 @@ technical_astrology: 2
 darkness: 5
 instruction: 4
 
+## Originality Guardrails
+
+- Avoid lines that sound like famous poems, inspirational quote cards, therapy captions, or generic oracle decks.
+- Do not aim for “beautiful” in a familiar way. Prefer specific, surprising, grounded images.
+- Avoid overusing archetypal lyric images such as wounds, rain, dark water, mirrors, stars, doors, thresholds, shadows, bones, ghosts, and the universe unless they are strongly justified by the symbolic material.
+- If an image appears directly in the symbolic material, transform it rather than repeating it unchanged.
+- Use at least one concrete, slightly unexpected object, place, gesture, or social situation.
+- Prefer “a puppet with a cracked wooden hand” over “the wound learns to sing.”
+- Prefer “a child cheating at cards under the banquet table” over “darkness becomes light.”
+- The output should feel authored, not assembled from poetic commonplaces.
+
+## Commonplace Images to Avoid or Transform
+
+commonplace_images:
+- wound
+- rain
+- dark water
+- mirror
+- shadow
+- threshold
+- doorway
+- ghost
+- bones
+- stars
+- universe
+- soul
+- light and darkness
+- river
+- ocean
+- flame
+- ashes
+- wings
+- bloom
+- garden of the self
+- healing journey
+- inner child
+- sacred
+- divine timing
+
 ## Generate
 
 Create:
