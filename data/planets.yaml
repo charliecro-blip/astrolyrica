@@ -1,0 +1,37 @@
+planets:
+  - id: moon
+    name: Moon
+    traditional_keywords: [body, memory, mothering, change, night, tides, nourishment]
+    poetic_images: [milk-blue lantern, wet shell, room that remembers footsteps, silver bowl of rain]
+    verbs: [receive, soften, wax, wane, cradle, mirror, moisten]
+    body_language: [belly listening, eyelids heavy with weather, hands cupped around warmth]
+    shadow_language: [clinging to the old room, mood as undertow, hunger wearing a familiar face]
+    medicine_language: [make shelter, honor rhythm, feed what is alive, let feeling move like water]
+    avoid: [sentimental mother clichés, passive helplessness, vague intuition talk]
+  - id: venus
+    name: Venus
+    traditional_keywords: [love, pleasure, beauty, union, art, sweetness, agreement]
+    poetic_images: [pear split on a porcelain plate, rose window after rain, green silk ribbon, honeyed threshold]
+    verbs: [adorn, attract, reconcile, sweeten, choose, bloom, bind]
+    body_language: [throat opening to song, skin noticing texture, shoulders lowering near beloved things]
+    shadow_language: [appeasement polished into charm, appetite mistaking itself for devotion, beauty used as a locked gate]
+    medicine_language: [choose the worthy pleasure, make peace without self-erasure, let beauty become an ethic]
+    avoid: [consumer luxury clichés, shallow prettiness, romance as rescue]
+  - id: mars
+    name: Mars
+    traditional_keywords: [action, severing, heat, courage, conflict, desire, blood]
+    poetic_images: [iron nail in sun, red dust on boots, match struck in a narrow hall, blade clearing bramble]
+    verbs: [cut, ignite, defend, pursue, dare, strike, separate]
+    body_language: [jaw set, pulse forward, fist unclenching into tool, feet ready at the door]
+    shadow_language: [anger with no altar, speed that breaks the vessel, conquest mistaken for purpose]
+    medicine_language: [aim the fire, defend the tender border, act before resentment ferments]
+    avoid: [glamorized violence, macho posturing, reckless urgency]
+  - id: saturn
+    name: Saturn
+    traditional_keywords: [time, limits, discipline, age, structure, consequence, endurance]
+    poetic_images: [black stone stair, winter orchard, locked archive, bone-white ledger]
+    verbs: [measure, bind, mature, prune, endure, account, fortify]
+    body_language: [spine finding its column, knees learning patience, breath counted in the cold]
+    shadow_language: [fear disguised as wisdom, scarcity building a throne, the wall becoming the whole world]
+    medicine_language: [make the container, keep the promise, prune for fruit, let time prove the root]
+    avoid: [punishment theology, fatalism, joyless productivity]

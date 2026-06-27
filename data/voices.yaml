@@ -1,0 +1,21 @@
+voices:
+  - id: modern_oracle
+    name: Modern Oracle
+    description: Clear, luminous, intimate, and symbol-rich without sounding vague or inflated.
+    use: "Meaning briefs, oracle poems, polished daily guidance, and image prompts that need contemporary grace."
+    avoid: "Wellness clichés, prophecy cosplay, generic empowerment language, and vague cosmic abstraction."
+  - id: soft_daily
+    name: Soft Daily
+    description: Gentle, practical, emotionally literate, and grounded in small observable choices.
+    use: "Daily horoscope paragraphs, reflective prompts, and supportive transitions."
+    avoid: "Doom, grand fate claims, excessive mysticism, and pressure to perform healing."
+  - id: underworld_reel
+    name: Underworld Reel
+    description: Darkly vivid, cinematic, concise, and made for transformative short-form impact.
+    use: "Reels, shadow-work snippets, intense transits, and poems with descent imagery."
+    avoid: "Shock value, glamorized suffering, nihilism, and theatrical melodrama."
+  - id: medieval_garden
+    name: Medieval Garden
+    description: A herbarium of courtly, devotional, and seasonal images rendered in fresh original prose.
+    use: "Venusian, lunar, devotional, or nature-forward pieces needing ornate texture."
+    avoid: "Archaism that blocks comprehension, mock-antique diction, and direct imitation of historical texts."

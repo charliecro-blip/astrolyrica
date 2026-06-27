@@ -1,0 +1,33 @@
+houses:
+  - id: fifth_house
+    name: 5th House
+    traditional_topics: [children, pleasure, games, creativity, romance, feasts]
+    modern_topics: [creative risk, delight, performance, play, erotic aliveness]
+    poetic_locations: [paint-spattered nursery, candlelit stage, orchard picnic, room of laughing masks]
+    verbs: [play, conceive, perform, risk, delight, court]
+    shadow_language: [applause hunger, joy postponed, creation trapped in display]
+    medicine_language: [make for the sake of aliveness, protect play, let delight teach courage]
+  - id: sixth_house
+    name: 6th House
+    traditional_topics: [labor, illness, servants, small animals, obligations]
+    modern_topics: [daily work, health routines, repair, service, craft discipline]
+    poetic_locations: [laundry line, apothecary shelf, workbench before sunrise, kennel gate]
+    verbs: [tend, repair, repeat, cleanse, practice, assist]
+    shadow_language: [duty without dignity, the body speaking through complaint, usefulness becoming captivity]
+    medicine_language: [honor maintenance, make ritual from routine, listen before the body shouts]
+  - id: seventh_house
+    name: 7th House
+    traditional_topics: [marriage, partnership, contracts, open enemies, counsel]
+    modern_topics: [mirroring, collaboration, relational agreements, projection, negotiation]
+    poetic_locations: [two chairs at a table, courthouse steps, mirror room, bridge at dusk]
+    verbs: [meet, vow, negotiate, reflect, oppose, reconcile]
+    shadow_language: [self lost in the mirror, conflict outsourced to the beloved, agreement without truth]
+    medicine_language: [name the terms, choose honest meeting, let the other be other]
+  - id: twelfth_house
+    name: 12th House
+    traditional_topics: [exile, hidden enemies, confinement, sorrow, monasteries, large animals]
+    modern_topics: [unconscious patterns, retreat, spiritual dissolution, private grief, endings]
+    poetic_locations: [salt room behind the chapel, hospital corridor at night, fogged harbor, locked dream stable]
+    verbs: [withdraw, dissolve, haunt, release, conceal, pray]
+    shadow_language: [self-undoing in soft shoes, grief without witness, the secret steering the ship]
+    medicine_language: [rest beyond performance, confess to the page, let solitude become sanctuary]

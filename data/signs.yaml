@@ -1,0 +1,45 @@
+signs:
+  - id: cancer
+    name: Cancer
+    element: water
+    modality: cardinal
+    temperament: cool and moist
+    body_zone: chest, stomach, breasts
+    poetic_images: [moonlit kitchen, crab shell at the tideline, locked cedar chest, soup steaming beside a window]
+    verbs: [shelter, remember, protect, nourish, retreat, return]
+    gift_language: [instinctive care, ancestral memory, emotional timing, fierce tenderness]
+    risk_language: [defensive nostalgia, indirect need, safety becoming a cage]
+    avoid: [mother stereotype, childishness, blanket sensitivity claims]
+  - id: scorpio
+    name: Scorpio
+    element: water
+    modality: fixed
+    temperament: cold and wet with hidden heat
+    body_zone: pelvis, reproductive organs, eliminative systems
+    poetic_images: [black well under roses, locked cellar, snake skin in a drawer, candle in a storm drain]
+    verbs: [penetrate, purge, bind, regenerate, uncover, intensify]
+    gift_language: [truth under pressure, intimacy with shadow, loyal depth, alchemical focus]
+    risk_language: [suspicion as armor, control as false safety, hunger for crisis]
+    avoid: [sexy villain clichés, manipulation glamor, trauma aesthetic]
+  - id: virgo
+    name: Virgo
+    element: earth
+    modality: mutable
+    temperament: cold and dry
+    body_zone: intestines, digestion, hands of service
+    poetic_images: [linen folded at dawn, herb mortar, margin notes in green ink, orchard ladder]
+    verbs: [sort, mend, refine, harvest, diagnose, serve]
+    gift_language: [devotion through detail, intelligent care, humble craft, useful discernment]
+    risk_language: [perfection as exile, worry chewing the grain, service without rest]
+    avoid: [neat freak caricature, scolding purity, productivity worship]
+  - id: taurus
+    name: Taurus
+    element: earth
+    modality: fixed
+    temperament: cold and dry with spring abundance
+    body_zone: throat, neck, voice
+    poetic_images: [warm field after rain, clay cup, bull in clover, bread cooling on a sill]
+    verbs: [root, savor, keep, build, sing, steady]
+    gift_language: [embodied patience, loyal cultivation, sensual wisdom, durable peace]
+    risk_language: [comfort hardening into refusal, possession mistaken for love, slow fear of change]
+    avoid: [lazy stereotype, luxury clichés, stubbornness as only trait]
