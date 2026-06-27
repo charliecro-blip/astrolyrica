@@ -1,0 +1,662 @@
+image_families:
+  - id: puppet_theater
+    name: Puppet Theater
+    description: Miniature stages, hand-built figures, visible strings, and public make-believe with awkward mechanics left showing.
+    best_for:
+      - performed control
+      - inherited roles
+      - comic dread
+      - private motives in public rooms
+    avoid_for:
+      - direct confession
+      - wide landscapes
+      - solemn prophecy
+    objects:
+      - painted wooden prince
+      - brass curtain rings
+      - felt wolf snout
+      - tangled linen strings
+      - cracked footlight bulbs
+      - cardboard moon pulley
+    places:
+      - school auditorium stage
+      - fairground booth
+      - attic rehearsal corner
+      - municipal park pavilion
+    gestures:
+      - lifting a figure by the spine bar
+      - bowing with a hinged neck
+      - untangling strings with wet fingers
+      - hiding a hand below the curtain
+    social_situations:
+      - children heckling the villain
+      - grandparents saving front-row seats
+      - a troupe arguing behind painted trees
+      - a patron applauding too early
+    textures:
+      - snagged velvet
+      - flaking tempera paint
+      - splintered pine
+      - chalky papier-mache
+    colors:
+      - tomato red
+      - tarnished gold
+      - soot black
+      - milk-glass white
+    risks:
+      - melodrama can flatten the speaker
+      - strings may overstate manipulation
+      - toy scale can reduce real stakes
+    medicine:
+      - show the hand, not the sermon
+      - let one prop refuse its cue
+      - keep the applause uneven
+
+  - id: feast_table
+    name: Feast Table
+    description: Heavy meals, polished serving tools, crowded seating, and appetites that expose rank, debt, and affection.
+    best_for:
+      - abundance with tension
+      - family politics
+      - bargains disguised as hospitality
+      - ceremonial appetite
+    avoid_for:
+      - solitary wilderness
+      - weightless mysticism
+      - sparse minimalism
+    objects:
+      - silver gravy boat
+      - split pomegranate
+      - bread heel in a napkin
+      - chipped soup tureen
+      - duck bones on blue china
+      - pearled oyster fork
+    places:
+      - rented banquet hall
+      - farmhouse dining room
+      - hotel side salon
+      - long trestle table under awnings
+    gestures:
+      - carving too close to the thumb
+      - passing salt without eye contact
+      - folding a napkin into a cone
+      - scraping sauce from the platter
+    social_situations:
+      - a toast that names the wrong person
+      - cousins counting chairs
+      - a guest refusing seconds too loudly
+      - servers waiting for a quarrel to end
+    textures:
+      - oily linen
+      - crisp poultry skin
+      - clotted cream
+      - dented silver
+      - grape-sticky fingers
+    colors:
+      - burgundy
+      - butter yellow
+      - porcelain blue
+      - roast brown
+      - parsley green
+    risks:
+      - richness can become decorative excess
+      - hunger metaphors may turn abstract
+      - class tension can become caricature
+    medicine:
+      - give one dish a practical flaw
+      - let utensils carry the argument
+      - balance plenty with an unpaid bill
+
+  - id: childhood_games
+    name: Childhood Games
+    description: Rules invented on pavement and carpet, small competitions, secret penalties, and the serious business of play.
+    best_for:
+      - memory with teeth
+      - informal law
+      - rivalry and alliance
+      - first lessons in fairness
+    avoid_for:
+      - adult romance as nostalgia
+      - pastoral innocence
+      - vague lost-child imagery
+    objects:
+      - scuffed red kickball
+      - bottle-cap checker
+      - bent jump-rope handle
+      - chalk hopscotch squares
+      - marble pouch with a broken snap
+      - plastic whistle on yarn
+    places:
+      - apartment courtyard
+      - school blacktop
+      - basement rec room
+      - alley behind the bakery
+      - living-room carpet fort
+    gestures:
+      - calling a do-over with both palms up
+      - hiding the best marble in a sock
+      - drawing a finish line with brick dust
+      - tagging a shoulder and running crooked
+    social_situations:
+      - older siblings changing the rules
+      - a new kid invited last
+      - teams chosen under streetlamps
+      - a parent counting down from the porch
+    textures:
+      - gritty knees
+      - warm rubber
+      - chalk powder
+      - carpet static
+    colors:
+      - playground orange
+      - notebook blue
+      - grass-stain green
+      - bubblegum pink
+      - asphalt gray
+    risks:
+      - nostalgia can sweeten the conflict
+      - game rules may need too much explanation
+      - children can become props for adults
+    medicine:
+      - keep score in objects
+      - let the rule change mid-line
+      - include one unfair victory
+
+  - id: orchard_picnic
+    name: Orchard Picnic
+    description: Fruit trees, packed lunches, insects, blankets, and the uneasy leisure of eating beneath cultivated branches.
+    best_for:
+      - temporary peace
+      - ripeness and delay
+      - courtship with practical interruptions
+      - seasonal bargains
+    avoid_for:
+      - cosmic grandeur
+      - sterile interiors
+      - pure innocence
+    objects:
+      - wicker hamper clasp
+      - bruised apricot
+      - cheese knife in wax paper
+      - thermos cup of lemonade
+      - tin of sugared almonds
+      - plum pit on a paper plate
+    places:
+      - ladder row between pear trees
+      - irrigation ditch bank
+      - pick-your-own checkout shed
+      - blanket beside fallen apples
+    gestures:
+      - brushing ants from the blanket edge
+      - twisting a peach free with two fingers
+      - shielding a cup from wasps
+      - tying a scarf around a low branch
+    social_situations:
+      - lovers pretending not to watch the road
+      - workers eating after the customers leave
+      - children trading fruit for cookies
+      - an owner weighing a basket twice
+    textures:
+      - peach fuzz
+      - damp wool blanket
+      - sticky knife handle
+      - dry leaf crackle
+      - bee-burred air
+    colors:
+      - apricot orange
+      - pear green
+      - picnic-cloth red
+      - straw yellow
+      - cloudy cider brown
+    risks:
+      - pastoral ease can erase labor
+      - sweetness can turn sentimental
+      - fruit images may become too general
+    medicine:
+      - name the tool that harvested it
+      - add insects before beauty settles
+      - let the blanket snag on stubble
+
+  - id: candlelit_stage
+    name: Candlelit Stage
+    description: Performers, wax, warped heat, costumes, and the fragile discipline of appearing luminous while equipment fails.
+    best_for:
+      - theatrical pressure
+      - secrecy before an audience
+      - fragile glamour
+      - controlled danger
+    avoid_for:
+      - casual daylight speech
+      - broad political argument
+      - dream sequence fog
+    objects:
+      - guttering beeswax taper
+      - buckled satin shoe
+      - greasepaint tin
+      - singed paper program
+      - cracked opera glass
+      - velvet rope hook
+    places:
+      - backstage stairwell
+      - provincial opera house
+      - rehearsal room with covered mirrors
+      - candle shelf beside the wings
+    gestures:
+      - cupping flame from a draft
+      - pinning a hem with clenched teeth
+      - swallowing before the curtain rises
+      - scraping wax from a cue sheet
+    social_situations:
+      - understudy waiting in costume
+      - patrons whispering through an aria
+      - stagehands trading blame in the wings
+      - a director clapping once for silence
+    textures:
+      - warm wax runnels
+      - powdery makeup
+      - scorched lace
+      - sweat under silk
+      - dusty velvet
+    colors:
+      - amber flame
+      - wine velvet
+      - pearl powder
+      - smoke gray
+      - lacquer black
+    risks:
+      - glamour may outshine the trouble
+      - candles can become generic romance
+      - stage language can feel arch
+    medicine:
+      - include a maintenance task
+      - make the flame misbehave physically
+      - let the audience hear a hinge
+
+  - id: apothecary_shelf
+    name: Apothecary Shelf
+    description: Bottles, labels, powders, drawers, and careful measures where cure, commerce, and superstition share a counter.
+    best_for:
+      - dose and consequence
+      - remedies with doubt
+      - small inventories of fear
+      - bodily specificity
+    avoid_for:
+      - miracle cures
+      - vague alchemy
+      - glamorous poison
+    objects:
+      - brown dropper bottle
+      - corked jar of fennel seed
+      - blue mortar with chipped lip
+      - folded paper powder packet
+      - brass dram scale
+      - drawer of blank labels
+      - licorice root bundle
+    places:
+      - narrow shop counter
+      - back room herb cabinet
+      - clinic supply closet
+      - window ledge above the radiator
+    gestures:
+      - tapping powder from a paper crease
+      - reading dosage twice under breath
+      - wiping syrup from the bottle neck
+      - grinding tablets with slow circles
+    social_situations:
+      - customer asking for credit quietly
+      - apprentice misfiling cough lozenges
+      - neighbor seeking a remedy after hours
+      - pharmacist refusing a dramatic story
+    textures:
+      - grainy powder
+      - sticky syrup
+      - brittle cork
+      - cool glass
+      - dry paper label
+    colors:
+      - iodine brown
+      - cobalt blue
+      - calendula yellow
+      - label cream
+      - oxidized brass
+    risks:
+      - cure imagery can imply false medicine
+      - old-shop detail may become quaint
+      - poison/cure binaries can oversimplify
+    medicine:
+      - keep dosage ordinary and cautious
+      - prefer inventory over enchantment
+      - make relief partial, not final
+
+  - id: storm_drain
+    name: Storm Drain
+    description: Gutters, grates, runoff, lost objects, and the civic plumbing that gathers weather into a narrow mouth.
+    best_for:
+      - aftermath and overflow
+      - neglected infrastructure
+      - urban omens
+      - small losses carried away
+    avoid_for:
+      - mystical rivers
+      - clean pastoral rain
+      - abstract despair
+    objects:
+      - rusted curb grate
+      - flattened soda can
+      - tennis ball wedged in leaves
+      - municipal stencil arrow
+      - snapped umbrella rib
+      - oil-slick receipt
+    places:
+      - bus-stop gutter
+      - underpass mouth
+      - alley catch basin
+      - curb beside a closed laundromat
+      - parking-lot low point
+    gestures:
+      - prying leaves from the grate with a stick
+      - stepping over the blackened puddle rim
+      - chasing a dropped key downhill
+      - marking flood height with a thumb
+    social_situations:
+      - commuters blaming shoes on the curb
+      - maintenance crew arriving after damage
+      - children daring each other near the grate
+      - shopkeeper sweeping water from the door
+    textures:
+      - slick algae film
+      - gritty runoff
+      - rust flakes
+      - swollen cardboard
+      - cold curb concrete
+    colors:
+      - hazard orange
+      - wet asphalt gray
+      - rust red
+      - gasoline rainbow
+      - leaf-mold brown
+    risks:
+      - drainage can become too grimy and single-note
+      - water loss may drift into cliche
+      - civic critique can turn declarative
+    medicine:
+      - keep one absurd object afloat
+      - use exact street hardware
+      - show water obeying slope, not fate
+
+  - id: locked_cellar
+    name: Locked Cellar
+    description: Below-grade storage, padlocks, preserves, utility pipes, and family knowledge kept among practical supplies.
+    best_for:
+      - withheld history
+      - domestic suspense
+      - inherited maintenance
+      - cold storage and delay
+    avoid_for:
+      - gothic abstraction
+      - supernatural revelation
+      - vague buried secrets
+    objects:
+      - brass padlock with green spots
+      - jar of clouded cherries
+      - fuse box with pencil notes
+      - coal shovel with cracked handle
+      - rolled carpet tied in twine
+      - mouse-nibbled ledger
+    places:
+      - stone cellar steps
+      - furnace corner
+      - canned-goods alcove
+      - laundry sink beside pipes
+    gestures:
+      - testing the lock without opening it
+      - holding a flashlight between teeth
+      - wiping dust from a jar lid
+      - listening at the floorboards
+    social_situations:
+      - siblings debating who has the key
+      - landlord denying a damp smell
+      - parent sending a child for potatoes
+      - estate sale buyers waiting upstairs
+    textures:
+      - chalky mortar
+      - sweating pipe metal
+      - dusty glass
+      - potato-eye sprouts
+      - mildew-soft cardboard
+    colors:
+      - cellar green
+      - tin gray
+      - pickle brine yellow
+      - coal black
+      - cherry syrup red
+    risks:
+      - cellar imagery can become stock gothic
+      - secrecy can turn vague
+      - darkness may crowd out concrete detail
+    medicine:
+      - pair fear with a household errand
+      - name the utility system
+      - let preserves outlast the argument
+
+  - id: moonlit_kitchen
+    name: Moonlit Kitchen
+    description: Late-hour counters, cold appliances, rinsed dishes, and household hunger under a hard, specific lunar light.
+    best_for:
+      - insomnia and appetite
+      - private domestic reckoning
+      - quiet negotiation
+      - after-party residue
+    avoid_for:
+      - grand celestial speech
+      - generic romance
+      - wilderness night
+    objects:
+      - enamel colander
+      - fridge magnet calendar
+      - half onion in plastic wrap
+      - chipped mug by the sink
+      - butter knife on a saucer
+      - ceramic rooster timer
+    places:
+      - galley kitchen
+      - back porch step
+      - sink beneath a sash window
+      - breakfast nook with vinyl seats
+    gestures:
+      - opening the refrigerator without deciding
+      - rinsing a glass until it squeaks
+      - cutting bread with the lights off
+      - pressing a palm to cool tile
+    social_situations:
+      - houseguest caught drinking tap water
+      - partners speaking so children sleep
+      - sibling leaving before breakfast
+      - neighbor visible across the air shaft
+    textures:
+      - cold tile
+      - flour dust
+      - condensation on plastic wrap
+      - stale toast crumbs
+      - enamel chips
+    colors:
+      - refrigerator white
+      - onion purple
+      - butter pale yellow
+      - blue milk light
+      - chrome silver
+    risks:
+      - moonlight can become decorative shorthand
+      - quiet may flatten into vagueness
+      - kitchen detail can feel cozy by default
+    medicine:
+      - make the appliance hum audible
+      - keep one leftover unromantic
+      - let the light land on a chore
+
+  - id: courtroom_table
+    name: Courtroom Table
+    description: Legal furniture, exhibits, paper stacks, and the formal choreography of testimony, delay, and judgment.
+    best_for:
+      - accusation and defense
+      - public record
+      - measured speech under pressure
+      - procedural fate
+    avoid_for:
+      - casual gossip
+      - mystical justice
+      - romantic reconciliation
+    objects:
+      - exhibit sticker on a plastic bag
+      - sweating water pitcher
+      - yellow legal pad
+      - court reporter foot pedal
+      - cracked counsel chair
+      - binder clip on affidavits
+    places:
+      - county courtroom
+      - courthouse hallway bench
+      - jury deliberation room
+      - clerk window with scratched plexiglass
+    gestures:
+      - sliding a folder across varnish
+      - standing when told too late
+      - covering the microphone before whispering
+      - smoothing a tie at the witness box
+    social_situations:
+      - families divided by the aisle
+      - lawyer asking the same question again
+      - bailiff finding extra chairs
+      - witness correcting a date
+    textures:
+      - varnished oak
+      - photocopy warmth
+      - stiff suit wool
+      - plastic evidence bag
+      - dry microphone foam
+    colors:
+      - manila tan
+      - institutional beige
+      - navy suit blue
+      - seal gold
+      - fluorescent white
+    risks:
+      - legal imagery can become didactic
+      - verdict language may oversimplify
+      - drama can outrun procedure
+    medicine:
+      - let paperwork slow the poem
+      - use the room's etiquette as pressure
+      - include one corrected date
+
+  - id: monastery_weather
+    name: Monastery Weather
+    description: Cloisters, laundry, bells, barometers, and daily weather observed through repeated chores rather than abstraction.
+    best_for:
+      - discipline and repetition
+      - communal silence with tasks
+      - weather as schedule
+      - restraint under strain
+    avoid_for:
+      - generic holiness
+      - floating transcendence
+      - ornate medieval fantasy
+    objects:
+      - cracked barometer glass
+      - wool scapular on a peg
+      - bell rope with hand polish
+      - rain bucket under a roof tile
+      - wooden weather journal
+      - chipped soup ladle
+    places:
+      - cloister walk
+      - kitchen garden wall
+      - laundry line near the refectory
+      - bell tower stair
+      - herb drying room
+    gestures:
+      - wringing sleeves before prayer
+      - chalking rainfall on a board
+      - pulling the bell rope with both hands
+      - moving seedlings under eaves
+    social_situations:
+      - novices arguing over wet boots
+      - cook delaying supper for hail
+      - porter greeting travelers in rain capes
+      - choir waiting while thunder passes
+    textures:
+      - damp wool
+      - limewashed wall grit
+      - slick flagstone
+      - steam from soup
+      - wind-stiff linen
+    colors:
+      - rain-slate blue
+      - lichen green
+      - candle tallow cream
+      - wet-rope brown
+      - clay tile red
+    risks:
+      - sacred setting can invite vague reverence
+      - silence can become empty atmosphere
+      - weather may grow symbolic too quickly
+    medicine:
+      - anchor devotion in chores
+      - count weather in measurements
+      - let someone complain practically
+
+  - id: marketplace_omens
+    name: Marketplace Omens
+    description: Stalls, scales, bargains, spoiled goods, and everyday signs misread or resisted in a noisy public economy.
+    best_for:
+      - public anxiety
+      - trade and rumor
+      - coincidence with receipts
+      - crowds as instruments
+    avoid_for:
+      - solemn prophecy
+      - isolated introspection
+      - timeless mythic plazas
+    objects:
+      - bruised persimmon stack
+      - hanging scale with taped needle
+      - counterfeit saffron packet
+      - cracked crate of eels
+      - rain-spotted price card
+      - rooster feather in a coin tray
+    places:
+      - fishmonger aisle
+      - covered bazaar gate
+      - flower stall beside bus fumes
+      - morning produce square
+      - spice arcade
+    gestures:
+      - weighing fruit with a suspicious thumb
+      - folding bills into a belt pouch
+      - sniffing fish before bargaining
+      - pointing at a price without speaking
+    social_situations:
+      - vendors spreading news before sunrise
+      - buyer returning spoiled figs
+      - fortune-teller renting half a stall
+      - police asking who owns the crate
+    textures:
+      - fish-scale slickness
+      - burlap scratch
+      - damp cardboard
+      - spice dust
+      - coin-warmed palm
+    colors:
+      - saffron orange
+      - fig purple
+      - market awning green
+      - fish silver
+      - price-card white
+    risks:
+      - omens can become vague prophecy
+      - marketplace detail may exoticize
+      - crowd scenes can blur individual action
+    medicine:
+      - attach every sign to a transaction
+      - keep bargaining specific and local
+      - let an omen be a pricing error
