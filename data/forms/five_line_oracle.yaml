@@ -1,0 +1,5 @@
+key: five_line_oracle
+name: Five-Line Oracle
+type: form
+keywords: concise, poetic, five lines, complete image
+prompt_text: Return exactly five lines. Each line should feel complete, imagistic, and necessary. Do not add a title or explanation.

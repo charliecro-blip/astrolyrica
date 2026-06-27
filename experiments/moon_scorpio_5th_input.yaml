@@ -1,0 +1,12 @@
+planet: moon
+sign: scorpio
+house: fifth
+voice: modern_oracle
+form: five_line_oracle
+sliders:
+  imagery: 8
+  surrealism: 6
+  embodiment: 7
+  technical_astrology: 2
+  darkness: 5
+  instruction: 4
