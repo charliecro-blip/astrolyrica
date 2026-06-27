@@ -92,7 +92,17 @@ def dump_block(value: Any) -> str:
     return yaml.safe_dump(value, sort_keys=False, allow_unicode=True).strip()
 
 
-def assemble_prompt(experiment: dict[str, Any], entries: dict[str, dict[str, Any]], template: str) -> str:
+def load_optional_commonplace_images(data: dict[str, Any]) -> Any:
+    """Return commonplace image data when the optional file is present."""
+    return data.get("commonplace_images.yaml", {})
+
+
+def assemble_prompt(
+    experiment: dict[str, Any],
+    entries: dict[str, dict[str, Any]],
+    template: str,
+    commonplace_images: Any | None = None,
+) -> str:
     """Replace template placeholders with experiment material."""
     astrology_context = "\n".join(
         [
@@ -114,6 +124,7 @@ def assemble_prompt(experiment: dict[str, Any], entries: dict[str, dict[str, Any
         "{{VOICE}}": dump_block(entries["voice"]),
         "{{FORM}}": dump_block(entries["form"]),
         "{{SLIDERS}}": dump_block(experiment.get("sliders", {})),
+        "{{COMMONPLACE_IMAGES}}": dump_block(commonplace_images or {}),
     }
 
     prompt = template
@@ -142,7 +153,8 @@ def main(argv: list[str]) -> int:
         }
 
         template = TEMPLATE_PATH.read_text(encoding="utf-8")
-        prompt = assemble_prompt(experiment, entries, template)
+        commonplace_images = load_optional_commonplace_images(data)
+        prompt = assemble_prompt(experiment, entries, template, commonplace_images)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(prompt, encoding="utf-8")
     except ValueError as exc:
