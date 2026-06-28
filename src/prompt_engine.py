@@ -290,6 +290,23 @@ def render_experiment_controls(experiment: dict[str, Any]) -> str:
     return dump_block(controls)
 
 
+def assemble_experiment_prompt(
+    experiment: dict[str, Any], data: dict[str, Any], template: str
+) -> str:
+    """Assemble a prompt from an in-memory experiment mapping."""
+    entries = {
+        kind: find_entry(data, kind, resolve_id(kind, experiment.get(kind)))
+        for kind in DATA_KEYS
+    }
+    return assemble_prompt(
+        experiment,
+        entries,
+        template,
+        load_optional_commonplace_images(data),
+        find_combination_notes(data, entries),
+    )
+
+
 def assemble_prompt(
     experiment: dict[str, Any],
     entries: dict[str, dict[str, Any]],
@@ -358,11 +375,7 @@ def build_one(
         kind: find_entry(data, kind, resolve_id(kind, experiment.get(kind)))
         for kind in DATA_KEYS
     }
-    commonplace_images = load_optional_commonplace_images(data)
-    combination_notes = find_combination_notes(data, entries)
-    prompt = assemble_prompt(
-        experiment, entries, template, commonplace_images, combination_notes
-    )
+    prompt = assemble_experiment_prompt(experiment, data, template)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(prompt, encoding="utf-8")
     return {
