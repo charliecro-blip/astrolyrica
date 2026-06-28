@@ -22,6 +22,25 @@ Future Codex tasks should use these repository operating documents instead of re
 
 This initial repository does not implement social posting, LLM API calls, or astrology calculations. It provides the starter data structure, documentation, prompt templates, and a YAML validation script.
 
+## Local Scriptorium UI
+
+The Scriptorium UI is a minimal local Flask interface for browsing `experiments/*.yaml` files and previewing the same assembled prompts produced by the CLI workflow. It does not call an LLM, save generated creative outputs, or add publishing/account features.
+
+Install dependencies and launch it from the repository root:
+
+~~~bash
+pip install -r requirements.txt
+python3 src/scriptorium_app.py
+~~~
+
+Then open:
+
+~~~text
+http://127.0.0.1:5000
+~~~
+
+Use the experiment dropdown to choose a local YAML file and copy the generated prompt from the preview area.
+
 ## Validate the data
 
 Install dependencies and run the validator:
