@@ -47,11 +47,7 @@ Use the provided symbolic astrology material to generate original, astrologicall
 
 Create:
 
-1. Plain-English meaning brief
-2. X-length poem
-3. Five-line oracle
-4. Daily horoscope paragraph
-5. Image prompt
+{{REQUESTED_OUTPUTS}}
 
 ## Rules
 
