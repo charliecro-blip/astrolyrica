@@ -71,4 +71,14 @@ You can pass a custom input and output path:
 python3 src/build_prompt.py experiments/moon_scorpio_5th_input.yaml outputs/experiments/moon_scorpio_5th_prompt.md
 ~~~
 
-The custom input must use the same keys: `planet`, `sign`, `house`, `voice`, `form`, and `sliders`.
+The custom input must use the same keys: `planet`, `sign`, `house`, `voice`, `form`, and `sliders`. It may also include `controls.include_sections` booleans for `combination_notes`, `commonplace_images`, and `sliders`, plus `controls.outputs` to choose the requested sections in the generated prompt.
+
+### Batch prompt generation
+
+Run this from the repository root to build every `experiments/*_input.yaml` file with conventional output names under `outputs/experiments/`:
+
+~~~bash
+python3 src/build_prompt.py --batch
+~~~
+
+Batch mode also writes `outputs/experiments/batch_summary.md` so local experiments can be reviewed without opening every prompt file.

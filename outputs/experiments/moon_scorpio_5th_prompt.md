@@ -242,10 +242,9 @@ commonplace_images:
 Create:
 
 1. Plain-English meaning brief
-2. X-length poem
-3. Five-line oracle
-4. Daily horoscope paragraph
-5. Image prompt
+2. Five-line oracle
+3. Daily horoscope paragraph
+4. Image prompt
 
 ## Rules
 

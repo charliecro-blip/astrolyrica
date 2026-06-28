@@ -10,3 +10,14 @@ sliders:
   technical_astrology: 2
   darkness: 5
   instruction: 4
+
+controls:
+  include_sections:
+    combination_notes: true
+    commonplace_images: true
+    sliders: true
+  outputs:
+    - Plain-English meaning brief
+    - Five-line oracle
+    - Daily horoscope paragraph
+    - Image prompt
