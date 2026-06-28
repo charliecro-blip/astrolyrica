@@ -3,6 +3,29 @@ sign: scorpio
 house: fifth
 voice: modern_oracle
 form: five_line_oracle
+intent: "Explore Moon in Scorpio in the 5th House as emotionally intense creative play."
+audience: "general astrology audience"
+occasion: "manual experiment"
+variation_seed: "puppet show, party basement, card table, crooked queen, toy crocodile"
+emphasize:
+  - creative risk
+  - private delight
+  - embodied play
+  - pleasure without surveillance
+avoid:
+  - generic wound language
+  - dark water clichés
+  - trauma aesthetic
+  - melodramatic seduction
+outputs:
+  - meaning_brief
+  - x_length_poem
+  - five_line_oracle
+  - daily_horoscope
+  - image_prompt
+notes:
+  - "Use the combination notes as interpretive intelligence, not as a keyword pile."
+  - "The output should feel specific, authored, and astrologically coherent."
 sliders:
   imagery: 8
   surrealism: 6
@@ -16,8 +39,3 @@ controls:
     combination_notes: true
     commonplace_images: true
     sliders: true
-  outputs:
-    - Plain-English meaning brief
-    - Five-line oracle
-    - Daily horoscope paragraph
-    - Image prompt

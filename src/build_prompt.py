@@ -28,6 +28,25 @@ DEFAULT_OUTPUT_REQUESTS = [
     "Image prompt",
 ]
 
+EXPERIMENT_CONTROL_FIELDS = (
+    "intent",
+    "audience",
+    "occasion",
+    "variation_seed",
+    "emphasize",
+    "avoid",
+    "outputs",
+    "notes",
+)
+
+OUTPUT_LABELS = {
+    "meaning_brief": "Plain-English meaning brief",
+    "x_length_poem": "X-length poem",
+    "five_line_oracle": "Five-line oracle",
+    "daily_horoscope": "Daily horoscope paragraph",
+    "image_prompt": "Image prompt",
+}
+
 DATA_KEYS = {
     "planet": ("planets.yaml", "planets"),
     "sign": ("signs.yaml", "signs"),
@@ -221,13 +240,13 @@ def normalize_controls(experiment: dict[str, Any]) -> dict[str, Any]:
     if not isinstance(include_sections, dict):
         raise ValueError("Experiment controls.include_sections must be a mapping")
 
-    outputs = raw_controls.get("outputs", DEFAULT_OUTPUT_REQUESTS)
+    outputs = experiment.get("outputs", raw_controls.get("outputs", DEFAULT_OUTPUT_REQUESTS))
     if outputs is None:
         outputs = DEFAULT_OUTPUT_REQUESTS
     if not isinstance(outputs, list) or not all(
         isinstance(output, str) and output.strip() for output in outputs
     ):
-        raise ValueError("Experiment controls.outputs must be a list of non-empty strings")
+        raise ValueError("Experiment outputs must be a list of non-empty strings")
 
     return {
         "include_sections": {
@@ -236,13 +255,42 @@ def normalize_controls(experiment: dict[str, Any]) -> dict[str, Any]:
             "sliders": bool(include_sections.get("sliders", True)),
         },
         "outputs": [output.strip() for output in outputs],
-        "notes": raw_controls.get("notes", ""),
+        "notes": experiment.get("notes", raw_controls.get("notes", "")),
     }
+
+
+def display_output(output: str) -> str:
+    """Return the human-readable label for an output key."""
+    if output in DEFAULT_OUTPUT_REQUESTS:
+        return output
+    return OUTPUT_LABELS.get(output, output.replace("_", " ").strip().title())
 
 
 def render_outputs(outputs: list[str]) -> str:
     """Render requested generation outputs as a numbered Markdown list."""
-    return "\n".join(f"{index}. {output}" for index, output in enumerate(outputs, 1))
+    return "\n".join(
+        f"{index}. {display_output(output)}" for index, output in enumerate(outputs, 1)
+    )
+
+
+def render_experiment_controls(experiment: dict[str, Any]) -> str:
+    """Render optional experiment controls for the generation prompt."""
+    controls: dict[str, Any] = {}
+    for field in EXPERIMENT_CONTROL_FIELDS:
+        if field in experiment and experiment[field] not in (None, "", []):
+            value = experiment[field]
+            if field == "outputs":
+                if not isinstance(value, list) or not all(
+                    isinstance(item, str) and item.strip() for item in value
+                ):
+                    raise ValueError("Experiment outputs must be a list of non-empty strings")
+                controls[field] = [display_output(item.strip()) for item in value]
+            else:
+                controls[field] = value
+
+    if not controls:
+        return "No additional experiment controls provided."
+    return dump_block(controls)
 
 
 def assemble_prompt(
@@ -280,6 +328,7 @@ def assemble_prompt(
         "{{SLIDERS}}": dump_block(experiment.get("sliders", {}))
         if include_sections["sliders"]
         else "Sliders disabled for this experiment.",
+        "{{EXPERIMENT_CONTROLS}}": render_experiment_controls(experiment),
         "{{COMMONPLACE_IMAGES}}": dump_block(commonplace_images or {})
         if include_sections["commonplace_images"]
         else "Commonplace image guardrails disabled for this experiment.",
@@ -330,8 +379,8 @@ def build_one(
 
 
 def discover_experiments(experiments_dir: Path) -> list[Path]:
-    """Return batchable experiment input files from a directory."""
-    return sorted(experiments_dir.glob("*_input.yaml"))
+    """Return batchable experiment YAML files from a directory."""
+    return sorted(experiments_dir.glob("*.yaml"))
 
 
 def write_batch_summary(rows: list[dict[str, str]], summary_path: Path) -> None:

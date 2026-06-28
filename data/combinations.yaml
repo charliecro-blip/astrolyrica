@@ -31,3 +31,68 @@ combinations:
     use_for:
       - integrating planet, sign, and house
       - specific image logic for the experiment
+  - id: venus_in_taurus
+    title: Venus in Taurus
+    notes:
+      - Affection becomes credible through touch, patience, repeated pleasure, and promises that can be felt in the body.
+      - Let desire move slowly enough to reveal what is mutual, durable, and honestly wanted.
+    use_for:
+      - embodied devotion
+      - sensory trust without ornament
+  - id: venus_in_7th_house
+    title: Venus in the 7th House
+    notes:
+      - Love, beauty, and ease are tested through agreement, negotiation, and the art of meeting another person directly.
+      - Relationship is not a fantasy of harmony but a made thing, revised through fairness and clear terms.
+    use_for:
+      - relational poise
+      - chosen reciprocity
+  - id: taurus_7th_house
+    title: Taurus in the 7th House
+    notes:
+      - Partnership asks for steadiness, sensual presence, and agreements sturdy enough to hold ordinary life.
+      - Conflict may slow down until the real values underneath it can be named.
+    use_for:
+      - practical commitment
+      - values made relational
+  - id: venus_in_taurus_7th_house
+    title: Venus in Taurus in the 7th House
+    notes:
+      - The blend favors love as a practiced agreement: shared meals, reliable touch, and beauty that does not need performance.
+      - Keep the image logic grounded in mutual consent, bodily trust, and terms that make pleasure safer to inhabit.
+    use_for:
+      - integrating planet, sign, and house
+      - specific relationship image logic
+  - id: mars_in_virgo
+    title: Mars in Virgo
+    notes:
+      - Action sharpens through attention, repair, technique, and the willingness to fix what is actually in reach.
+      - Anger becomes useful when it stops proving purity and starts improving the tool, schedule, wound, or room.
+    use_for:
+      - precise action
+      - disciplined repair
+  - id: mars_in_6th_house
+    title: Mars in the 6th House
+    notes:
+      - Drive enters daily labor, health rhythms, service, and the body's small negotiations with effort.
+      - Let conflict appear through chores, practice, fatigue, maintenance, and the courage to adjust a routine.
+    use_for:
+      - embodied discipline
+      - work as active care
+  - id: virgo_6th_house
+    title: Virgo in the 6th House
+    notes:
+      - The sixth house becomes exacting and medicinal here, concerned with craft, usefulness, and the humble intelligence of correction.
+      - Specificity should feel caring rather than punitive: a clean edge, a repaired seam, a habit made kinder.
+    use_for:
+      - practical refinement
+      - non-punitive correction
+  - id: mars_in_virgo_6th_house
+    title: Mars in Virgo in the 6th House
+    notes:
+      - The core blend is disciplined repair: decisive energy applied to the body's routines, the day's work, and the craft of doing less harm.
+      - Favor scenes where anger becomes skill, friction becomes adjustment, and care is proven through precise action.
+    use_for:
+      - integrating planet, sign, and house
+      - specific work and body image logic
+

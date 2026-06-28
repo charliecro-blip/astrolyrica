@@ -198,6 +198,35 @@ technical_astrology: 2
 darkness: 5
 instruction: 4
 
+## Experiment Controls
+
+intent: Explore Moon in Scorpio in the 5th House as emotionally intense creative play.
+audience: general astrology audience
+occasion: manual experiment
+variation_seed: puppet show, party basement, card table, crooked queen, toy crocodile
+emphasize:
+- creative risk
+- private delight
+- embodied play
+- pleasure without surveillance
+avoid:
+- generic wound language
+- dark water clichés
+- trauma aesthetic
+- melodramatic seduction
+outputs:
+- Plain-English meaning brief
+- X-length poem
+- Five-line oracle
+- Daily horoscope paragraph
+- Image prompt
+notes:
+- Use the combination notes as interpretive intelligence, not as a keyword pile.
+- The output should feel specific, authored, and astrologically coherent.
+
+If experiment outputs are provided, create only those requested output types and respect their order.
+Use the intent, audience, occasion, variation seed, emphasis, avoid list, and notes as directing intelligence rather than as phrases to paste.
+
 ## Originality Guardrails
 
 - Avoid lines that sound like famous poems, inspirational quote cards, therapy captions, or generic oracle decks.
@@ -242,9 +271,10 @@ commonplace_images:
 Create:
 
 1. Plain-English meaning brief
-2. Five-line oracle
-3. Daily horoscope paragraph
-4. Image prompt
+2. X-length poem
+3. Five-line oracle
+4. Daily horoscope paragraph
+5. Image prompt
 
 ## Rules
 

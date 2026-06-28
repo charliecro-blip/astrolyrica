@@ -75,10 +75,24 @@ The custom input must use the same keys: `planet`, `sign`, `house`, `voice`, `fo
 
 ### Batch prompt generation
 
-Run this from the repository root to build every `experiments/*_input.yaml` file with conventional output names under `outputs/experiments/`:
+Run one experiment from the repository root:
 
 ~~~bash
-python3 src/build_prompt.py --batch
+python3 src/build_prompt.py
 ~~~
 
-Batch mode also writes `outputs/experiments/batch_summary.md` so local experiments can be reviewed without opening every prompt file.
+This preserves the manual Moon/Scorpio/5th experiment and writes:
+
+~~~text
+outputs/experiments/moon_scorpio_5th_prompt.md
+~~~
+
+Run all local experiment inputs from the repository root:
+
+~~~bash
+python3 src/run_experiments.py
+~~~
+
+The batch runner discovers every YAML file in `experiments/`, writes generated prompts to `outputs/experiments/`, and updates `outputs/experiments/batch_summary.md` so local experiments can be reviewed without opening every prompt file.
+
+`src/build_prompt.py --batch` remains available for compatibility, but `src/run_experiments.py` is the dedicated experiment runner.

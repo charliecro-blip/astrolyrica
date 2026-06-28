@@ -1,0 +1,22 @@
+planet: venus
+sign: taurus
+house: seventh
+voice: modern_oracle
+form: five_line_oracle
+intent: "relationship, pleasure, embodiment, agreement"
+emphasize:
+  - devotion
+  - sensory trust
+  - relational steadiness
+  - honest terms
+avoid:
+  - luxury clichés
+  - soulmate clichés
+  - generic sensuality
+sliders:
+  imagery: 7
+  surrealism: 4
+  embodiment: 8
+  technical_astrology: 2
+  darkness: 1
+  instruction: 4

@@ -1,0 +1,22 @@
+planet: mars
+sign: virgo
+house: sixth
+voice: modern_oracle
+form: five_line_oracle
+intent: "work, health, craft, discipline, repair"
+emphasize:
+  - precise action
+  - body routines
+  - useful anger
+  - small corrections
+avoid:
+  - productivity worship
+  - purity anxiety
+  - scolding tone
+sliders:
+  imagery: 6
+  surrealism: 3
+  embodiment: 8
+  technical_astrology: 3
+  darkness: 2
+  instruction: 6

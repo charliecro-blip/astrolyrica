@@ -28,6 +28,13 @@ Use the provided symbolic astrology material to generate original, astrologicall
 
 {{SLIDERS}}
 
+## Experiment Controls
+
+{{EXPERIMENT_CONTROLS}}
+
+If experiment outputs are provided, create only those requested output types and respect their order.
+Use the intent, audience, occasion, variation seed, emphasis, avoid list, and notes as directing intelligence rather than as phrases to paste.
+
 ## Originality Guardrails
 
 - Avoid lines that sound like famous poems, inspirational quote cards, therapy captions, or generic oracle decks.
