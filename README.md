@@ -9,6 +9,15 @@ AstroLyrica is an astrological poetry engine that turns structured symbolic astr
 - **Starweather** — the future daily publishing bot for recurring horoscopes and social-ready material.
 - **Scriptorium** — the future review and editing dashboard for inspecting generated work, tuning voice, and approving outputs.
 
+
+## Project operating docs
+
+Future Codex tasks should use these repository operating documents instead of relying on repeated pasted prompts:
+
+- [AGENTS.md](AGENTS.md) — project-wide instructions and scope boundaries for Codex work.
+- [Build tracks](docs/build_tracks.md) — major work tracks for symbolic data, prompt assembly, experiments, Scriptorium, and Starweather preparation.
+- [Implementation sequence](docs/implementation_sequence.md) — recommended order for building AstroLyrica from local foundations toward later automation.
+
 ## Current scope
 
 This initial repository does not implement social posting, LLM API calls, or astrology calculations. It provides the starter data structure, documentation, prompt templates, and a YAML validation script.
