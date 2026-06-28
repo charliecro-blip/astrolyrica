@@ -12,6 +12,10 @@ Use the provided symbolic astrology material to generate original, astrologicall
 
 {{SYMBOLIC_MATERIAL}}
 
+## Combination Notes
+
+{{COMBINATION_NOTES}}
+
 ## Voice
 
 {{VOICE}}

@@ -1,0 +1,33 @@
+combinations:
+  - id: moon_in_scorpio
+    title: Moon in Scorpio
+    notes:
+      - Emotional life intensifies around secrecy, loyalty, and psychic weather beneath the surface.
+      - Images can lean toward guarded tenderness, composted memory, and feeling as a locked or tidal room.
+    use_for:
+      - embodied emotional stakes
+      - intimate shadows without melodrama
+  - id: moon_in_5th_house
+    title: Moon in the 5th House
+    notes:
+      - Memory and mood seek expression through play, performance, children, romance, and creative risk.
+      - Let delight carry feeling through specific gestures rather than broad declarations of joy.
+    use_for:
+      - creative vulnerability
+      - pleasure shaped by changing moods
+  - id: scorpio_5th_house
+    title: Scorpio in the 5th House
+    notes:
+      - Fifth-house pleasure becomes charged, private, magnetic, and sometimes competitive or taboo-aware.
+      - Games, flirtation, art, and risk may reveal power dynamics as much as delight.
+    use_for:
+      - high-stakes play
+      - art as exposure or transformation
+  - id: moon_in_scorpio_5th_house
+    title: Moon in Scorpio in the 5th House
+    notes:
+      - The core blend is emotionally intense creative exposure: a private tide stepping onto a candlelit stage.
+      - Favor scenes where play tests trust, performance reveals vulnerability, or pleasure transforms an old feeling.
+    use_for:
+      - integrating planet, sign, and house
+      - specific image logic for the experiment
