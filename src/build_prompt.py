@@ -15,6 +15,7 @@ DATA_DIR = REPO_ROOT / "data"
 DEFAULT_INPUT = REPO_ROOT / "experiments" / "moon_scorpio_5th_input.yaml"
 DEFAULT_OUTPUT = REPO_ROOT / "outputs" / "experiments" / "moon_scorpio_5th_prompt.md"
 TEMPLATE_PATH = REPO_ROOT / "prompts" / "generation_prompt.md"
+COMBINATIONS_FILENAME = "combinations.yaml"
 
 DATA_KEYS = {
     "planet": ("planets.yaml", "planets"),
@@ -37,6 +38,21 @@ HOUSE_ALIASES = {
     "tenth": "tenth_house",
     "eleventh": "eleventh_house",
     "twelfth": "twelfth_house",
+}
+
+HOUSE_NUMBER_ALIASES = {
+    "first_house": "1st_house",
+    "second_house": "2nd_house",
+    "third_house": "3rd_house",
+    "fourth_house": "4th_house",
+    "fifth_house": "5th_house",
+    "sixth_house": "6th_house",
+    "seventh_house": "7th_house",
+    "eighth_house": "8th_house",
+    "ninth_house": "9th_house",
+    "tenth_house": "10th_house",
+    "eleventh_house": "11th_house",
+    "twelfth_house": "12th_house",
 }
 
 
@@ -92,6 +108,75 @@ def dump_block(value: Any) -> str:
     return yaml.safe_dump(value, sort_keys=False, allow_unicode=True).strip()
 
 
+def house_id_variants(house_id: str) -> list[str]:
+    """Return supported text variants for a normalized house id."""
+    variants = [house_id]
+    if house_id.endswith("_house"):
+        variants.append(house_id.removesuffix("_house"))
+    numbered = HOUSE_NUMBER_ALIASES.get(house_id)
+    if numbered:
+        variants.append(numbered)
+    return list(dict.fromkeys(variants))
+
+
+def candidate_combination_ids(planet_id: str, sign_id: str, house_id: str) -> list[str]:
+    """Return combination ids relevant to the selected planet, sign, and house."""
+    candidates: list[str] = []
+    for house_variant in house_id_variants(house_id):
+        candidates.extend(
+            [
+                f"{planet_id}_in_{sign_id}",
+                f"{planet_id}_in_{house_variant}",
+                f"{sign_id}_{house_variant}",
+                f"{planet_id}_in_{sign_id}_{house_variant}",
+            ]
+        )
+    return list(dict.fromkeys(candidates))
+
+
+def normalize_combination_entries(raw_combinations: Any) -> list[dict[str, Any]]:
+    """Normalize supported combinations.yaml shapes into id-bearing mappings."""
+    if not raw_combinations:
+        return []
+    if isinstance(raw_combinations, dict):
+        raw_entries = raw_combinations.get("combinations", raw_combinations)
+        if isinstance(raw_entries, dict):
+            return [
+                {"id": entry_id, **entry}
+                if isinstance(entry, dict)
+                else {"id": entry_id, "notes": entry}
+                for entry_id, entry in raw_entries.items()
+            ]
+        raw_combinations = raw_entries
+    if isinstance(raw_combinations, list):
+        return [
+            entry
+            for entry in raw_combinations
+            if isinstance(entry, dict) and entry.get("id")
+        ]
+    return []
+
+
+def find_combination_notes(
+    data: dict[str, Any], entries: dict[str, dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Find optional combination notes for the selected planet, sign, and house."""
+    combinations = normalize_combination_entries(data.get(COMBINATIONS_FILENAME))
+    candidate_ids = set(
+        candidate_combination_ids(
+            entries["planet"]["id"], entries["sign"]["id"], entries["house"]["id"]
+        )
+    )
+    return [entry for entry in combinations if entry.get("id") in candidate_ids]
+
+
+def render_combination_notes(notes: list[dict[str, Any]]) -> str:
+    """Render matching combination notes for the prompt."""
+    if not notes:
+        return "No specific combination notes found."
+    return dump_block({"combinations": notes})
+
+
 def load_optional_commonplace_images(data: dict[str, Any]) -> Any:
     """Return commonplace image data when the optional file is present."""
     return data.get("commonplace_images.yaml", {})
@@ -102,6 +187,7 @@ def assemble_prompt(
     entries: dict[str, dict[str, Any]],
     template: str,
     commonplace_images: Any | None = None,
+    combination_notes: list[dict[str, Any]] | None = None,
 ) -> str:
     """Replace template placeholders with experiment material."""
     astrology_context = "\n".join(
@@ -121,6 +207,7 @@ def assemble_prompt(
     replacements = {
         "{{ASTROLOGY_CONTEXT}}": astrology_context,
         "{{SYMBOLIC_MATERIAL}}": symbolic_material,
+        "{{COMBINATION_NOTES}}": render_combination_notes(combination_notes or []),
         "{{VOICE}}": dump_block(entries["voice"]),
         "{{FORM}}": dump_block(entries["form"]),
         "{{SLIDERS}}": dump_block(experiment.get("sliders", {})),
@@ -154,7 +241,10 @@ def main(argv: list[str]) -> int:
 
         template = TEMPLATE_PATH.read_text(encoding="utf-8")
         commonplace_images = load_optional_commonplace_images(data)
-        prompt = assemble_prompt(experiment, entries, template, commonplace_images)
+        combination_notes = find_combination_notes(data, entries)
+        prompt = assemble_prompt(
+            experiment, entries, template, commonplace_images, combination_notes
+        )
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(prompt, encoding="utf-8")
     except ValueError as exc:
