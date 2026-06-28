@@ -120,17 +120,19 @@ def house_id_variants(house_id: str) -> list[str]:
 
 
 def candidate_combination_ids(planet_id: str, sign_id: str, house_id: str) -> list[str]:
-    """Return combination ids relevant to the selected planet, sign, and house."""
-    candidates: list[str] = []
-    for house_variant in house_id_variants(house_id):
-        candidates.extend(
-            [
-                f"{planet_id}_in_{sign_id}",
-                f"{planet_id}_in_{house_variant}",
-                f"{sign_id}_{house_variant}",
-                f"{planet_id}_in_{sign_id}_{house_variant}",
-            ]
-        )
+    """Return combination ids relevant to the selected planet, sign, and house.
+
+    Keep the high-level combination order stable while allowing house id aliases
+    such as ``fifth_house`` to match numbered data ids such as ``5th_house``.
+    """
+    house_variants = house_id_variants(house_id)
+    candidates = [f"{planet_id}_in_{sign_id}"]
+    for template in (
+        f"{planet_id}_in_{{house}}",
+        f"{sign_id}_{{house}}",
+        f"{planet_id}_in_{sign_id}_{{house}}",
+    ):
+        candidates.extend(template.format(house=variant) for variant in house_variants)
     return list(dict.fromkeys(candidates))
 
 
