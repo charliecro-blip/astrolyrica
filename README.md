@@ -24,7 +24,7 @@ This initial repository does not implement social posting, LLM API calls, or ast
 
 ## Local Scriptorium UI
 
-The Scriptorium UI is a minimal local Flask interface for browsing `experiments/*.yaml` files and previewing the same assembled prompts produced by the CLI workflow. It does not call an LLM, save generated creative outputs, or add publishing/account features.
+The Scriptorium UI is a minimal local Flask interface for browsing `experiments/*.yaml` files, editing experiment controls, previewing assembled prompts, and saving new local experiment YAML variants. It does not call an LLM, save generated creative outputs, or add publishing/account features.
 
 Install dependencies and launch it from the repository root:
 
@@ -39,7 +39,7 @@ Then open:
 http://127.0.0.1:5000
 ~~~
 
-Use the experiment dropdown to choose a local YAML file and copy the generated prompt from the preview area.
+Use the experiment dropdown to choose a local YAML file, adjust controls, click **Preview prompt** to assemble a prompt without changing the original file, or enter a safe filename stem and click **Save as new experiment** to write `experiments/<stem>_input.yaml` and regenerate `outputs/experiments/<stem>_prompt.md`.
 
 ## Validate the data
 
